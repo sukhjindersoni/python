@@ -22,7 +22,7 @@ Working :-
 
 print("content-type: text/html")   - Is used to tell that the final result is to be given in text and in HTML format.
 
-print()  - This empty print statement prints a empty line due to the '''end="\n"''' and is used to differentiate between the header and the body of the file.
+print()  - This empty print statement prints a empty line due to the end="\n" and is used to differentiate between the header and the body of the file.
 
 sudo is required in every command of docker because only the root user or the user with all the privilages can run the docker commands using API so the "sudoers" file is configured for the "apache" user 
 
