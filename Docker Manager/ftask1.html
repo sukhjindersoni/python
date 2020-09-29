@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Docker Manager</title>
+<style>
+body{
+display:flex;
+place-items:center;
+flex-direction:column;
+background-color:#333;
+font-family:arial;
+}
+h2{
+color:white;
+max-width:400px;
+}
+p{
+color:grey;
+max-width:400px;
+}
+form input,select{
+padding:5px;
+border-radius:4px;
+border:1px solid grey;
+}
+
+</style>
+</head>
+<body>
+<main>
+<form action="http://192.168.43.230/cgi-bin/ftask1.py">
+<h2>Launch Container</h2>
+<input type="text" name="ln" placeholder="Enter OS Name">
+<!--<input type="text" name="li" placeholder="Enter OS Img">-->
+<select name="li">
+<option>centos</option>
+</select>
+<input type="submit" value="Submit">
+</form>
+
+<form action="http://192.168.43.230/cgi-bin/ftask1rm.py">
+<h2>Remove Container</h2>
+<input type="text" name="rn" placeholder="Enter OS Name">
+<input type="submit" value="Submit">
+</form>
+
+<form action="http://192.168.43.230/cgi-bin/ftask1ipn.py">
+<h2>IP Address</h2>
+<input type="text" name="ipn" placeholder="Enter OS Name">
+<input type="submit" value="Submit">
+</form>
+
+<form action="http://192.168.43.230/cgi-bin/ftask1tc.py">
+<h2>Run your command in a temporary container</h2>
+<p>On submit a docker container will be launched and the command will be executed on it and then the container will be removed.
+<br><br>
+<select name="ti">
+<option>centos</option>
+</select>
+<input type="text" name="tc" placeholder="Enter Command">
+<input type="submit" value="Submit">
+</form>
+<!--
+<form action="http://192.168.43.230/cgi-bin/ftask1pi.py">
+<h2>Pull Image</h2>
+<select name="pi">
+<option>ubuntu</option>
+<option>fedora</option>
+<option>centos</option>
+</select>
+<input type="submit" value="Submit">
+</form>
+-->
+<form action="http://192.168.43.230/cgi-bin/ftask1dc.py">
+<h2>Other Docker Commands</h2>
+<select name="dc">
+<option>Current Running Containers</option>
+<option>Images Present</option>
+<option>Information</option>
+<option>Help</option>
+
+</select>
+<input type="submit" value="Submit">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</body>
+</html>
